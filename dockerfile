@@ -7,7 +7,7 @@ RUN \
   rm -rf /var/lib/apt/lists/* && \
   echo "\ndaemon off;" >> /etc/nginx/nginx.conf && \
    chown -R www-data:www-data /var/lib/nginx
-
+copy index.html  /var/www/html
 # Define working directory.
 WORKDIR /etc/nginx
 
